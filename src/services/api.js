@@ -23,7 +23,7 @@ const Get = (PATH) => {
 };
 
 // Weather Path
-const getGeoLocation = (city) => Get(`geo/1.0/direct?q=${city}&limit=5`);
+const getGeoLocation = (city) => Get(`geo/1.0/direct?q=${city}&limit=30`);
 const getWeatherData = (lat, lon) =>
   Get(`data/2.5/weather?lat=${lat}&lon=${lon}`);
 
